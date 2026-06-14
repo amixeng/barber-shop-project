@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BarberKing — Salon de coiffure à Antananarivo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Barlow+Condensed:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./asset/css/style.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav>
+    <a href="#" class="logo">Barber<span>King</span></a>
+
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#team">L'équipe</a></li>
+      <li><a href="#booking">Réserver</a></li>
+      <li><a href="#avis">Avis</a></li>
+      <li><a href="pages/about.html">À propos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <span class="nav-phone">☎ +261 34 00 000 00</span>
+
+    <button class="hamburger" id="menuBtn" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile overlay menu -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Menu mobile">
+    <button class="mobile-close" id="menuClose" aria-label="Fermer">✕</button>
+    <a href="#services"  onclick="closeMobile()">Services</a>
+    <a href="#team"      onclick="closeMobile()">L'équipe</a>
+    <a href="#booking"   onclick="closeMobile()">Réserver</a>
+    <a href="#avis"      onclick="closeMobile()">Avis</a>
+    <a href="pages/about.html" onclick="closeMobile()">À propos</a>
+    <a href="#contact"   onclick="closeMobile()">Contact</a>
+    <a href="#booking" class="btn btn-gold" onclick="closeMobile()">Prendre RDV</a>
+  </div>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Classic refuge — coupes &amp; rasages</p>
+
+      <h1>
+        Nos coupes
+        <em>subliment votre style</em>
+      </h1>
+
+      <p>
+        <b>𝓢𝓽𝔂𝓵𝓮, 𝓬𝓸𝓷𝓯𝓸𝓻𝓽 𝓮𝓽 𝓹𝓮𝓻𝓯𝓮𝓬𝓽𝓲𝓸𝓷… à 𝓬𝓱𝓪𝓺𝓾𝓮 𝓹𝓪𝓼𝓼𝓪𝓰𝓮</b>
+      </p>
+
+      <div class="hero-btns">
+        <a href="#booking" class="btn btn-gold">Réserver maintenant</a>
+        <a href="#services" class="btn btn-outline">Nos services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES ==================== -->
+  <section class="services" id="services">
+    <div class="services-header">
+      <p class="label">Nos prestations</p>
+      <h2 class="section-title">Services <em>quotidiens</em></h2>
+      <p class="section-sub">Un large éventail de services de toilettage masculin réunis sous un même toit.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">✂</div>
+        <div class="service-name">Service Normal</div>
+        <div class="service-desc">
+          Choisissez votre meilleure coupe et laissez-nous faire avec nos outils et produits.
+        </div>
+        <div class="service-price">10 000 Ar</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">💆</div>
+        <div class="service-name">Soin Technique</div>
+        <div class="service-desc">
+          Lavage après coupe pour ceux qui aiment le confort.
+        </div>
+        <div class="service-price">15 000 Ar</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <div class="service-name">Réservation</div>
+        <div class="service-desc">
+          Pour toute occasion, on peut vous prioriser à n'importe quel moment que vous décidez.
+        </div>
+        <div class="service-price">20 000 Ar</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">✦</div>
+        <div class="service-name">Premium</div>
+        <div class="service-desc">
+          Bien plus qu'une simple coupe — une véritable expérience de rasage traditionnel et de coiffure moderne avec tous les soins.
+        </div>
+        <div class="service-price">30 000 Ar</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== TEAM ==================== -->
+  <section class="team" id="team">
+    <div class="team-header">
+      <div>
+        <p class="label">Notre équipe</p>
+        <h2 class="section-title">Stylistes <em>experts</em></h2>
+        <p class="section-sub">
+          Nos stylistes proposent des services traditionnels et contemporains avec notre soin exclusif.
+        </p>
+      </div>
+      <a href="#booking" class="btn btn-outline">Prendre RDV</a>
+    </div>
+
+    <div class="team-grid">
+
+      <div class="barber-card">
+        <div class="barber-placeholder">💈</div>
+        <div class="barber-info">
+          <div class="barber-name">Andry Rakoto</div>
+          <div class="barber-role">Master Barbier &amp; Expert couleur</div>
+        </div>
+      </div>
+
+      <div class="barber-card">
+        <div class="barber-placeholder">✂</div>
+        <div class="barber-info">
+          <div class="barber-name">Sitraka Rabe</div>
+          <div class="barber-role">Expert fade &amp; Rasage</div>
+        </div>
+      </div>
+
+      <div class="barber-card">
+        <div class="barber-placeholder">🪒</div>
+        <div class="barber-info">
+          <div class="barber-name">Toky Randria</div>
+          <div class="barber-role">Master Barbier &amp; Artiste restyle</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== AVAILABILITY + BOOKING ==================== -->
+  <section class="availability" id="booking">
+
+    <div class="avail-header">
+      <p class="label">Planifiez votre visite</p>
+      <h2 class="section-title">Nous sommes <em>disponibles</em></h2>
+      <p class="section-sub" style="margin: 0 auto; text-align:center;">
+        Dédiés à l'excellence de notre service à chaque rendez-vous.
+      </p>
+    </div>
+
+    <div class="avail-inner" style="margin-top: 3.5rem;">
+
+      <!-- Opening hours -->
+      <div class="opening-times">
+        <p class="footer-heading" style="margin-bottom: 1.2rem;">Heures d'ouverture</p>
+
+        <div class="time-row">
+          <span class="time-label">Lundi — Mercredi</span>
+          <span class="time-value">07:00 — 22:00</span>
+        </div>
+        <div class="time-row">
+          <span class="time-label">Jeudi — Vendredi</span>
+          <span class="time-value">07:00 — 22:00</span>
+        </div>
+        <div class="time-row">
+          <span class="time-label">Samedi</span>
+          <span class="time-value">12:00 — 22:30</span>
+        </div>
+
+        <p class="footer-heading" style="margin-top: 2rem; margin-bottom: 1.2rem;">Heures de fermeture</p>
+
+        <div class="time-row">
+          <span class="time-label">Vendredi &amp; Samedi</span>
+          <span class="time-value">12:00 — 22:30</span>
+        </div>
+        <div class="time-row">
+          <span class="time-label">Dimanche</span>
+          <span class="time-value">Week-end</span>
+        </div>
+      </div>
+
+      <!-- Decorative scissors -->
+      <div class="avail-scissors" aria-hidden="true">✂</div>
+
+      <!-- Booking form -->
+      <div class="booking-section" style="background:transparent; border:none; padding:0;">
+        <div class="booking-form">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="date" aria-label="Date du rendez-vous">
+            </div>
+            <div class="form-group">
+              <select aria-label="Heure">
+                <option value="">Heure</option>
+                <option>08:00</option>
+                <option>09:00</option>
+                <option>10:00</option>
+                <option>11:00</option>
+                <option>14:00</option>
+                <option>15:00</option>
+                <option>16:00</option>
+                <option>17:00</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <select aria-label="Choisir un service">
+                <option value="">Service</option>
+                <option>Coupe &amp; Styling — 10 000 Ar</option>
+                <option>Taille de barbe — 20 000 Ar</option>
+                <option>Coloration — 12 000 Ar</option>
+                <option>Soin du visage — 8 000 Ar</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <select aria-label="Choisir un styliste">
+                <option value="">Styliste</option>
+                <option>Andry Rakoto</option>
+                <option>Sitraka Rabe</option>
+                <option>Toky Randria</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Votre prénom" aria-label="Prénom">
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Votre numéro de téléphone" aria-label="Téléphone">
+          </div>
+          <button class="submit-btn" onclick="handleBooking()">
+            Confirmer le rendez-vous
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS ==================== -->
+  <section class="testimonials" id="avis">
+    <p class="label">Témoignages</p>
+    <h2 class="section-title">Ce qu'ils <em>disent</em></h2>
+
+    <div class="testimonials-grid">
+
+      <div class="testimonial">
+        <div class="quote-mark">"</div>
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-text">
+          Le meilleur barbier de la ville. Andry est un vrai artiste, je ressors toujours transformé. Je ne vais nulle part ailleurs depuis 5 ans.
+        </div>
+        <div class="testimonial-author">— Rado M., client fidèle</div>
+      </div>
+
+      <div class="testimonial">
+        <div class="quote-mark">"</div>
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-text">
+          Ambiance premium, équipe professionnelle. Le forfait complet vaut chaque ariary. Mon expérience préférée chaque mois, sans hésitation.
+        </div>
+        <div class="testimonial-author">— Jean-Pierre V., client régulier</div>
+      </div>
+
+      <div class="testimonial">
+        <div class="quote-mark">"</div>
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-text">
+          Sitraka fait des fades impeccables. Réservation facile, ponctualité parfaite. Je recommande à tous mes amis sans la moindre hésitation.
+        </div>
+        <div class="testimonial-author">— Mickael T., nouveau client</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer id="contact">
+    <div class="footer-grid">
+
+      <div>
+        <a href="#" class="footer-logo">Barber<span>King</span></a>
+        <p class="footer-desc">
+          L'excellence du barbier classique. Nous sculptons votre image avec passion, précision et savoir-faire artisanal.
+        </p>
+      </div>
+
+      <div>
+        <p class="footer-heading">Navigation</p>
+        <ul class="footer-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">L'équipe</a></li>
+          <li><a href="#booking">Réserver</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-heading">Horaires</p>
+        <div class="footer-contact">
+          <p>Lun – Ven : 07h – 22h</p>
+          <p>Samedi : 12h – 22h30</p>
+          <p>Dimanche : Fermé</p>
+        </div>
+      </div>
+
+      <div>
+        <p class="footer-heading">Contact</p>
+        <div class="footer-contact">
+          <p>Antananarivo</p>
+          <p>📞 +261 34 00 000 00</p>
+          <p>✉ contact@barberking.mg</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 BarberKing. Tous droits réservés.</span>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script src="./components/navbar.js"></script>
+  <script src="./services/bookingService.js"></script>
+  <script src="./components/serviceCards.js"></script>
+  <script src="./components/testimonials.js"></script>
+  <script src="./components/scrollAnimations.js"></script>
+
+</body>
+</html>
